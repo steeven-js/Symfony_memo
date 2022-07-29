@@ -27,11 +27,8 @@ iwr -useb get.scoop.sh | iex
 scoop install symfony-cliy
 symfony -v
 ```
-
-#https://www.univ-orleans.fr/iut-orleans/informatique/intra/tuto/php/symfony-simple-app.html
-
 # Débuts avec Symfony
-
+https://www.univ-orleans.fr/iut-orleans/informatique/intra/tuto/php/symfony-simple-app.html
 ## Préparatifs
 
 ## Squellette d’application Symfony
