@@ -15,9 +15,9 @@ Aide mémoire des commandes pour Symfony
 
 # Débuts avec Symfony
 
-##Préparatifs
+## Préparatifs
 
-##Squellette d’application Symfony
+## Squellette d’application Symfony
 
 Partons de la trame d’application de type microservice déjà créée à l’aide de composer :
 
@@ -46,4 +46,4 @@ Pour le stopper :
 
 `Ctrl+C`
 
-Visitons [127.0.0.1:8000] (dans mon cas) et constatons que Symfony Marche !!
+Visitons [127.0.0.1:8000](127.0.0.1:8000) (dans mon cas) et constatons que Symfony Marche !!
