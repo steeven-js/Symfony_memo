@@ -21,7 +21,7 @@ symfony -v
 
 Partons de la trame d’application de type microservice déjà créée à l’aide de composer :
 
-'composer create-project symfony/skeleton hello-sf'
+`composer create-project symfony/skeleton hello-sf`
 
 Serveur Web embarqué de Symfony
 Lançons le serveur web embarqué de Symfony.
