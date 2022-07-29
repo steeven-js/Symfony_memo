@@ -148,10 +148,10 @@ On peut lister toutes ses routes :
 
 et obtenir :
 
-Name | Method | Scheme | Host | Path
---- | --- | --- | --- | ---
-app_hello_sayhello | ANY | ANY | ANY | /hello
-app_hello_bonjour | ANY | ANY | ANY | /bonjour/{nom}
+| Name               | Method | Scheme | Host | Path           |
+| ------------------ | ------ | ------ | ---- | -------------- |
+| app_hello_sayhello | ANY    | ANY    | ANY  | /hello         |
+| app_hello_bonjour  | ANY    | ANY    | ANY  | /bonjour/{nom} |
 
 ### la commande bin/console
 
@@ -175,7 +175,7 @@ Commençons par utiliser la recette flex pour l’installer :
 
 `composer require twig`
 
-contrôleur avec twig
+### contrôleur avec twig
 
 Puis changeons notre contrôleur pour hériter de `AbstractController` :
 
