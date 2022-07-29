@@ -77,20 +77,25 @@ class HelloController
 ```
 On teste : [127.0.0.1:8000/hello](https://127.0.0.1:8000/hello)
 
-Annotations et routes paramétrées
-annotations
-Au lieu de placer toutes les routes de l’application dans un seul fichier, il peut-être plus souple d’utiliser les annotations dans le code même du contrôleur pour plus de commodité :
+## Annotations et routes paramétrées
+
+### annotations
+
+Au lieu de placer toutes les routes de l’application dans un seul fichier, il peut-être plus souple d’utiliser les *annotations* dans le code même du contrôleur pour plus de commodité :
 
 Commençons par les installer :
 
-composer require annotations
-Recommentez tout le contenu de routes.yaml
+`composer require annotations`
+
+Recommentez tout le contenu de *routes.yaml*
 
 Puis annotez votre contrôleur :
 
-routes paramétrées
+### routes paramétrées
+
 Ajoutons une autre route paramétrée dans notre contrôleur:
 
+```php
 <?php
     namespace App\Controller;
 
@@ -114,40 +119,48 @@ Ajoutons une autre route paramétrée dans notre contrôleur:
             return new Response("Bonjour $nom !");
         }
     }
-debug des routes
+```
+
+### debug des routes
+
 On peut lister toutes ses routes :
 
-php bin/console debug:router
+`php bin/console debug:router`
+
 et obtenir :
 
-```
 Name | Method | Scheme | Host | Path
 --- | --- | --- | --- | ---
 app_hello_sayhello | ANY | ANY | ANY | /hello
 app_hello_bonjour | ANY | ANY | ANY | /bonjour/{nom}
-```
 
-la commande bin/console
+### la commande bin/console
+
 Cette commande nous permet d’avoir des informations sur notre projet, de faire des actions primaires dessus et de le débugger. Afin d’obtenir la liste des options offertes par cette commande :
 
-php bin/console
+`php bin/console`
+
 Prenez le temps de lire la documentation de chaque commande et d’essayer de comprendre ce que chacune d’elle fait.
 
 Remarquez la commande que nous avons utilisée pour lister les routes de notre projet : debug:router Displays current routes for an application
 
-Puis retester : 127.0.0.1:8000/bonjour/toto
+Puis retester : [127.0.0.1:8000/bonjour/toto](https://127.0.0.1:8000/bonjour/toto)
 
-Utiliser des templates Twig dans sf
+## Utiliser des templates Twig dans sf
+
 Nous voudrions à présent utiliser des templates Twig dans notre application.
 
-installation
+### installation
+
 Commençons par utiliser la recette flex pour l’installer :
 
-composer require twig
+`composer require twig`
+
 contrôleur avec twig
+
 Puis changeons notre contrôleur pour hériter de `AbstractController` :
 
-```
+```php
 <?php
 
     namespace App\Controller;
@@ -178,10 +191,11 @@ Puis changeons notre contrôleur pour hériter de `AbstractController` :
     }
 ```
 
-template twig
-et mettons en place le template correspondant bonjour.html.twig dans le dossier « templates » :
+### template twig
 
-```
+et mettons en place le template correspondant `bonjour.html.twig` dans le dossier « templates » :
+
+```php
 {# templates/bonjour.html.twig #}
 {% extends 'base.html.twig' %}
 
@@ -190,9 +204,9 @@ et mettons en place le template correspondant bonjour.html.twig dans le dossier 
 {% endblock %}
 ```
 
-avec un base.html.twig du type :
+avec un `base.html.twig` du type :
 
-```
+```php
 <!DOCTYPE html>
 <html>
     <head>
@@ -209,41 +223,8 @@ avec un base.html.twig du type :
 
 Retestons : 127.0.0.1:8000/bonjour/toto
 
-Memo twig
-php bin/console debug:twig
+### Memo twig
+
+`php bin/console debug:twig`
+
 Vous donnera la liste des Fonctions, Filtres et Tests disponibles dans les templates Twig.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
