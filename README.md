@@ -213,7 +213,7 @@ Puis changeons notre contrôleur pour hériter de `AbstractController` :
 
 et mettons en place le template correspondant `bonjour.html.twig` dans le dossier « templates » :
 
-```html
+``` ruby
 {# templates/bonjour.html.twig #}
 {% extends 'base.html.twig' %}
 
