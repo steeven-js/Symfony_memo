@@ -6,6 +6,14 @@ git commit -m "✨ wip"
 git branch -M main
 git remote add origin https://github.com/steeven-js/Symfony_memo.git
 git push -u origin main
+
+```
+
+```
+git add .
+git status
+git commit -m "✨ wip"
+git push -u origin main
 ```
 
 # Symfony_memo
