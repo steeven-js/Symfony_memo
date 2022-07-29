@@ -120,10 +120,12 @@ On peut lister toutes ses routes :
 php bin/console debug:router
 et obtenir :
 
+```
 Name | Method | Scheme | Host | Path
 --- | --- | --- | --- | ---
 app_hello_sayhello | ANY | ANY | ANY | /hello
 app_hello_bonjour | ANY | ANY | ANY | /bonjour/{nom}
+```
 
 la commande bin/console
 Cette commande nous permet d’avoir des informations sur notre projet, de faire des actions primaires dessus et de le débugger. Afin d’obtenir la liste des options offertes par cette commande :
