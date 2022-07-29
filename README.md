@@ -63,7 +63,7 @@ Pour le stopper :
 
 `Ctrl+C`
 
-Visitons [127.0.0.1:8000]([127.0.0.1:8000](https://127.0.0.1:8000/)) (dans mon cas) et constatons que Symfony Marche !!
+Visitons [127.0.0.1:8000](https://127.0.0.1:8000/) (dans mon cas) et constatons que Symfony Marche !!
 
 ## Un Controleur et une route simple
 
