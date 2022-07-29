@@ -11,7 +11,7 @@ Aide mémoire des commandes pour Symfony
 
 `symfony -v`
 
-##
+#https://www.univ-orleans.fr/iut-orleans/informatique/intra/tuto/php/symfony-simple-app.html
 
 # Débuts avec Symfony
 
@@ -46,4 +46,66 @@ Pour le stopper :
 
 `Ctrl+C`
 
-Visitons [127.0.0.1:8000](127.0.0.1:8000) (dans mon cas) et constatons que Symfony Marche !!
+Visitons [127.0.0.1:8000]([127.0.0.1:8000](https://127.0.0.1:8000/)) (dans mon cas) et constatons que Symfony Marche !!
+
+## Un Controleur et une route simple
+
+### routes
+Observer le contenu de `routes.yaml` dans le dossier config. Laisser ce code commenté et ajoutez-y le code suivant :
+
+`hello:
+    path: /hello
+    controller: App\Controller\HelloController::sayHello`
+
+### contrôleur
+Puis placer le contrôleur suivant dans src/Controller/HelloController.php :
+
+`<?php
+
+namespace App\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+
+class HelloController
+{
+    public function sayHello()
+    {
+        return new Response('Hello!');
+    }
+}`
+On teste : [127.0.0.1:8000/hello](https://127.0.0.1:8000/hello)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
