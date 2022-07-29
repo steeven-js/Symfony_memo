@@ -60,7 +60,8 @@ Observer le contenu de `routes.yaml` dans le dossier config. Laisser ce code com
 ### contrôleur
 Puis placer le contrôleur suivant dans src/Controller/HelloController.php :
 
-`<?php
+```
+<?php
 
 namespace App\Controller;
 
@@ -72,7 +73,8 @@ class HelloController
     {
         return new Response('Hello!');
     }
-}`
+}
+```
 On teste : [127.0.0.1:8000/hello](https://127.0.0.1:8000/hello)
 
 
