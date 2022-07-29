@@ -60,7 +60,7 @@ Observer le contenu de `routes.yaml` dans le dossier config. Laisser ce code com
 ### contrôleur
 Puis placer le contrôleur suivant dans src/Controller/HelloController.php :
 
-```
+``` ruby
 <?php
 
 namespace App\Controller;
