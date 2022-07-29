@@ -145,8 +145,9 @@ Commençons par utiliser la recette flex pour l’installer :
 
 composer require twig
 contrôleur avec twig
-Puis changeons notre contrôleur pour hériter de AbstractController :
+Puis changeons notre contrôleur pour hériter de `AbstractController` :
 
+```
 <?php
 
     namespace App\Controller;
@@ -175,17 +176,23 @@ Puis changeons notre contrôleur pour hériter de AbstractController :
                         ]);
         }
     }
+```
+
 template twig
 et mettons en place le template correspondant bonjour.html.twig dans le dossier « templates » :
 
+```
 {# templates/bonjour.html.twig #}
 {% extends 'base.html.twig' %}
 
 {% block body %}
     <h1>Bonjour {{ nom }}</h1>
 {% endblock %}
+```
+
 avec un base.html.twig du type :
 
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -198,6 +205,8 @@ avec un base.html.twig du type :
         {% block js %}{% endblock %}
     </body>
 </html>
+```
+
 Retestons : 127.0.0.1:8000/bonjour/toto
 
 Memo twig
