@@ -13,13 +13,12 @@ Aide mémoire des commandes pour Symfony
 
 ## symfony-cli
 
-`Set-ExecutionPolicy RemoteSigned -scope CurrentUser`
-
-`iwr -useb get.scoop.sh | iex`
-
-`scoop install symfony-cliy`
-
-`symfony -v`
+```
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+iwr -useb get.scoop.sh | iex
+scoop install symfony-cliy
+symfony -v
+```
 
 #https://www.univ-orleans.fr/iut-orleans/informatique/intra/tuto/php/symfony-simple-app.html
 
