@@ -70,9 +70,11 @@ Visitons [127.0.0.1:8000](https://127.0.0.1:8000/) (dans mon cas) et constatons 
 ### routes
 Observer le contenu de `routes.yaml` dans le dossier config. Laisser ce code commenté et ajoutez-y le code suivant :
 
-`hello:
+```php
+hello:
     path: /hello
-    controller: App\Controller\HelloController::sayHello`
+    controller: App\Controller\HelloController::sayHello
+```
 
 ### contrôleur
 Puis placer le contrôleur suivant dans src/Controller/HelloController.php :
@@ -207,12 +209,11 @@ Puis changeons notre contrôleur pour hériter de `AbstractController` :
         }
     }
 ```
-
 ### template twig
 
 et mettons en place le template correspondant `bonjour.html.twig` dans le dossier « templates » :
 
-```php
+```html
 {# templates/bonjour.html.twig #}
 {% extends 'base.html.twig' %}
 
@@ -223,7 +224,7 @@ et mettons en place le template correspondant `bonjour.html.twig` dans le dossie
 
 avec un `base.html.twig` du type :
 
-```php
+```html
 <!DOCTYPE html>
 <html>
     <head>
