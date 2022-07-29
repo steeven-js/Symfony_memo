@@ -95,7 +95,7 @@ Puis annotez votre contrôleur :
 
 Ajoutons une autre route paramétrée dans notre contrôleur:
 
-```
+```php
 <?php
     namespace App\Controller;
 
@@ -160,7 +160,7 @@ contrôleur avec twig
 
 Puis changeons notre contrôleur pour hériter de `AbstractController` :
 
-```
+```php
 <?php
 
     namespace App\Controller;
@@ -195,7 +195,7 @@ Puis changeons notre contrôleur pour hériter de `AbstractController` :
 
 et mettons en place le template correspondant `bonjour.html.twig` dans le dossier « templates » :
 
-```
+```php
 {# templates/bonjour.html.twig #}
 {% extends 'base.html.twig' %}
 
@@ -206,7 +206,7 @@ et mettons en place le template correspondant `bonjour.html.twig` dans le dossie
 
 avec un `base.html.twig` du type :
 
-```
+```php
 <!DOCTYPE html>
 <html>
     <head>
